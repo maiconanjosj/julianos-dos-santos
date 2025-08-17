@@ -155,21 +155,22 @@
       <h2 class="section-title">Vamos criar algo juntos?</h2>
       <p class="section-sub">Envie sua ideia, data e local. Retorno em até 24h úteis.</p>
       <div class="contact">
-        <form onsubmit="event.preventDefault()">
+        <form action="https://formspree.io/f/xanbzbob" method="POST">
           <div>
             <label>Nome</label>
-            <input placeholder="Seu nome" required>
+            <input type="text" name="nome" placeholder="Seu nome" required>
           </div>
           <div>
             <label>Email</label>
-            <input type="email" placeholder="seu@email.com" required>
+            <input type="email" name="email" placeholder="seu@email.com" required>
           </div>
           <div>
             <label>Mensagem</label>
-            <textarea rows="5" placeholder="Conte sua necessidade, data, local e referências."></textarea>
+            <textarea name="mensagem" rows="5" placeholder="Conte sua necessidade, data, local e referências." required></textarea>
           </div>
           <button class="btn primary" type="submit">Solicitar orçamento</button>
         </form>
+
         <aside class="aside">
           <h3 class="section-sub" style="margin:0 0 8px; color:var(--text); font-size:18px;">Informações</h3>
           <ul class="list">
@@ -195,4 +196,5 @@
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
